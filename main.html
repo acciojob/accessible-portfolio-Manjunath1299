@@ -10,7 +10,39 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+ <header>
+    <!-- Heading with ARIA role "heading" -->
+    <h1 role="heading">My Accessible Portfolio</h1>
+  </header>
 
+  <nav role="navigation">
+    <!-- Navigation bar with ARIA role "navigation" -->
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Image with ARIA role "img" and alt attribute -->
+    <img src="portfolio-image.jpg" alt="My Portfolio Image" role="img">
+
+    <!-- Brief description -->
+    <p>A brief description of my portfolio goes here...</p>
+
+    <!-- List with ARIA role "list" and list items with ARIA role "listitem" -->
+    <ul role="list">
+      <li role="listitem">Project 1</li>
+      <li role="listitem">Project 2</li>
+      <li role="listitem">Project 3</li>
+    </ul>
+  </main>
+
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
 </body>
 
 </html>
