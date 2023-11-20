@@ -7,43 +7,44 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
- <header>
-    <!-- Heading with ARIA role "heading" -->
-    <h1 role="heading">My Accessible Portfolio</h1>
+	<!-- the entire body must be written by student.-->
+	<header role="banner">
+    <h1 role="heading" aria-level="1">Accessible Portfolio</h1>
+    <nav role="navigation">
+      <ul role="list">
+        <li role="listitem"><a href="#home">Home</a></li>
+        <li role="listitem"><a href="#about">About</a></li>
+        <li role="listitem"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav role="navigation">
-    <!-- Navigation bar with ARIA role "navigation" -->
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <main role="main">
 
-  <main>
-    <!-- Image with ARIA role "img" and alt attribute -->
-    <img src="https://pbs.twimg.com/profile_images/1591558315254890500/ETIHb4Nl_400x400.jpg" alt="My Portfolio Image" role="img">
+    <section role="region" aria-label="Description">
+      <h2 role="heading" aria-level="2">Welcome to my portfolio!</h2>
+      <img width="500" src="https://i0.wp.com/plopdo.com/wp-content/uploads/2021/07/Screenshot-1.png?resize=1210%2C642&ssl=1" alt="A beautiful example image" role="img">
+      <p role="note">💁‍♀️ I'm a passionate aspiring frontend developer with a strong desire to create beautiful and interactive web experiences.</p>
+      <p role="doc-subtitle">Looking forward to this exciting journey in the world of frontend development!</p>
+    </section>
 
-    <!-- Brief description -->
-    <p>Jeffrey Preston Bezos (/ˈbeɪzoʊs/ BAY-zohss;[2] né Jorgensen; born January 12, 1964) is an American entrepreneur, media proprietor and investor. He is the founder, executive chairman, and former president and CEO of Amazon, the world's largest e-commerce and cloud computing company. With a net worth of US$162 billion as of November 2023, Bezos is the third-wealthiest person in the world and was the wealthiest from 2017 to 2021, according to both the Bloomberg Billionaires Index and Forbes.[3][4]</p>
+    <section role="region" aria-label="List of Items">
+      <h2 role="heading" aria-level="2">My skills</h2>
+      <ul role="list">
+        <li role="listitem">HTML</li>
+        <li role="listitem">CSS</li>
+        <li role="listitem">JAVASCRIPT</li>
+      </ul>
+    </section>
 
-    <!-- List with ARIA role "list" and list items with ARIA role "listitem" -->
-    <ul role="list">
-      <li class="listitem">Project 1</li>
-      <li class="listitem">Project 2</li>
-      <li class="listitem">Project 3</li>
-	  <li class ="listitem">Project 4</li>
-    </ul>
   </main>
 
-  <footer>
-    <!-- Footer content goes here -->
+  <footer role="contentinfo>
+    <p role="doc-author">Copyright © 2023, Anusha</p>
   </footer>
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
 
 </html>
